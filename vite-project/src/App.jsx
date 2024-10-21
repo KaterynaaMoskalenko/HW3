@@ -1,19 +1,20 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import viteImage from './assets/vite-image.png'
+import Footer from "./Pages/Footer/Footer";
+import Header from "./Pages/Header/Header";
+import Main from "./Pages/Main/Main";
+import Sidebar from "./Pages/Sidebar/Sidebar";
+
+
 
 function App() {
-  
-
   return (
-    <div style={{ textAlign: 'center', padding: '20px' }}>
-    <h1>Hello world</h1>
-    <img src={viteImage} alt="vite-image" style={{ width: '600px', height: 'auto' }} />
+    <div className="container">
+      <Header />
+      <Main />
+      <Sidebar />
+      <Footer />
 
-     </div>
+    </div>
   )
+  
 }
-
-export default App
+export default App;
